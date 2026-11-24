@@ -352,9 +352,9 @@ Evaluate the new research paper according to the system instructions.
 
     return result
 
-file_path_paper = r"C:\Users\nagas\Desktop\IIT\Test_Parsed_Papers\P002.md"
-file_path_conference_profiles = r"C:\Users\nagas\Desktop\IIT\Conference_Profiles.json"
-file_path_publishability_comparision = r"C:\Users\nagas\Desktop\IIT\Publishability_Comparison.json"
+file_path_paper = #path to paper u want to classify , it should be parsed using the PDF_parsing.py
+file_path_conference_profiles = #path to file containing conference profiles
+file_path_publishability_comparision = # path to file containging publishabilty comparision
 
 output = classify_paper(file_path_paper,file_path_conference_profiles,file_path_publishability_comparision)
 
