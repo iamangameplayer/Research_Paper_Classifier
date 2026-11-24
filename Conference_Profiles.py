@@ -148,8 +148,8 @@ Research Paper:
     return result
 
 
-input_folder = r"C:\Users\nagas\Desktop\IIT\Publishable_Papers_Parsed\TMLR_Parsed_Papers"
-output_folder = r"C:\Users\nagas\Desktop\IIT\Publishable_Results_JSON\TMLR"
+input_folder = #folder containing specific conference papers
+output_folder = # output folder for conference profiles in json
 
 conference_name = "TMLR"
 
