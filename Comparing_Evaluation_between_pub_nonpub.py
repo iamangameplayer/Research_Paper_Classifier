@@ -11,10 +11,10 @@ client = OpenAI(
 )
 
 
-publishable_folder = r"C:\Users\nagas\Desktop\IIT\Publishable_Results_JSON_Without_Conferences"
-non_publishable_folder = r"C:\Users\nagas\Desktop\IIT\Non_Publishable_Results_JSON"
+publishable_folder = #publishable papers json format
+non_publishable_folder = # noon publishable papers json format
 
-output_file = r"C:\Users\nagas\Desktop\IIT\Publishability_Comparison.json"
+output_file = #new publishabilty comparison of all the papers
 
 
 
