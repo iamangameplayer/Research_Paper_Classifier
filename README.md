@@ -2,7 +2,8 @@
 
 An AI-powered research paper evaluation system that analyzes research papers, assesses their publishability based on research-quality criteria, and identifies conferences whose observed research profiles align with the paper.
 
-The system uses Large Language Models (LLMs) and reference datasets of previously evaluated research papers to provide evidence-based assessments.
+The system mainly uses Qwen3 -30b model from Openrouter through API for all the tasks requiring reasing and LlamaParse through API to parse the research papers into markdown format 
+It requires reference datasets of previously evaluated research papers to provide evidence-based assessments.
 
 ## Overview
 
@@ -118,8 +119,8 @@ Research_Paper_Classifier/
 | `Conference_Profiles.py` | Analyzes conference papers and generates conference research profiles. |
 | `Comparing_Evaluation_between_pub_nonpub.py` | Compares publishable and non-publishable paper analyses to identify distinguishing patterns. |
 | `Comparing_Evaluation_between_Conferences.py` | Identifies common and distinctive characteristics across conference profiles. |
-| `Conference_Profiles.json` | Stores generated conference research profiles. |
-| `Publishability_Comparison.json` | Stores comparative findings between publishable and non-publishable papers. |
+| `Conference_Profiles.json` | Example file showing generated conference research profiles. |
+| `Publishability_Comparison.json` | Example file showing  comparative findings between publishable and non-publishable papers. |
 
 ## Installation and Setup
 
@@ -168,11 +169,7 @@ LLAMA_PARSER_API_KEY=your_llamacloud_api_key
 
 ### 5. Configure Project Paths
 
-Some scripts currently use absolute Windows file paths.
-
-Before running them, update the input and output directory paths inside the Python files to match your local project structure.
-
-You will also need the appropriate PDF and reference datasets for the analysis stages.
+This requires necessary paths custom to the user's use case which are needed to be explicitly changed at the mentioned places
 
 ## Execution
 
@@ -223,8 +220,6 @@ Conference alignment is categorized into:
 - Weak Alignment
 
 ## Limitations
-
-- The reference dataset is relatively small and may not be generalized to other academic areas.
 - Conference profiles describe observed characteristics of the supplied papers for the particular conference, not the  official conference requirements.
 - LLM-generated evaluations may contain errors or overlook relevant information.
 - Results depend on the quality of PDF extraction and the supplied reference data.
@@ -235,7 +230,6 @@ This is a personal research paper classification workflow built to understand th
 ## Future Improvements
 
 - Develop  automated pipeline for all processing stages.
-- Replace hardcoded paths with configurable project directories.
 - Expand the reference dataset with more research papers and conferences.
 - Introduce a user-friendly interface for uploading and evaluating papers.
 - Add more comprehensive benchmarking and performance evaluation.
