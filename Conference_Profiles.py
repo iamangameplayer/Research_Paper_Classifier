@@ -151,7 +151,7 @@ Research Paper:
 input_folder = #folder containing specific conference papers
 output_folder = # output folder for conference profiles in json
 
-conference_name = "TMLR"
+conference_name = #required conference name
 
 os.makedirs(output_folder, exist_ok=True)
 
