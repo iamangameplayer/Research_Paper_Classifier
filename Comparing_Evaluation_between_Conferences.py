@@ -11,9 +11,9 @@ client = OpenAI(
 )
 
 
-input_folder = r"C:\Users\nagas\Desktop\IIT\Publishable_Results_JSON"
+input_folder = # Folder containing parsed papers of reference conferences
 
-output_file = r"C:\Users\nagas\Desktop\IIT\Conference_Profiles.json"
+output_file = # Output file to present the observable characteristics of the conferences
 
 
 def load_conference_papers(folder_path):
