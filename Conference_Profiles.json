@@ -1,0 +1,739 @@
+{
+  "CVPR": {
+    "Conference_Name": "CVPR",
+    "Number_of_Papers": 2,
+    "Common_Research_Problems": [
+      "Fine-grained action recognition in video",
+      "3D reconstruction from 2D images",
+      "Temporal modeling in continuous video streams",
+      "Real-world, ecologically valid video analysis",
+      "Multi-label classification in video",
+      "Video-based regression (e.g., pitch speed)",
+      "Accurate 3D modeling for health applications"
+    ],
+    "Common_Research_Gaps": [
+      "Lack of publicly available, high-quality datasets for fine-grained sports video analysis",
+      "Absence of standardized benchmarks for 3D food reconstruction",
+      "Limited practical methods for 3D reconstruction due to hardware or data constraints",
+      "Need for robust, real-world evaluation frameworks for video understanding",
+      "Gap in accurate 3D modeling from single-view images in naturalistic settings"
+    ],
+    "Common_Topics_or_Research_Areas": [
+      "Video understanding",
+      "Fine-grained action recognition",
+      "Temporal modeling in video",
+      "3D reconstruction",
+      "Sports video analysis",
+      "Computer vision for health and nutrition",
+      "Dataset creation and benchmarking"
+    ],
+    "Common_Methodologies": [
+      "Use of 3D CNNs (e.g., I3D, InceptionV3)",
+      "Temporal feature aggregation via pooling, convolution, and learned sub-events",
+      "Super-event modeling using probabilistic distributions (Cauchy)",
+      "Multi-view and single-view 3D reconstruction",
+      "Camera pose estimation (e.g., COLMAP, PixSfM)",
+      "Neural surface reconstruction (e.g., NeuS2, Zero123)",
+      "Use of optical flow and pose data (OpenPose, SAM, XMem++)",
+      "Sliding window and per-frame classification for continuous video"
+    ],
+    "Common_Datasets": [
+      "MLB-YouTube: 4,290 segmented clips and 2,128 continuous clips from 20 MLB postseason games",
+      "MetaFood3D: 20 food items with RGBD images, video recordings, and object masks",
+      "Publicly available datasets with visible checkerboard calibration",
+      "High-fidelity, multi-modal datasets with ground truth annotations"
+    ],
+    "Common_Experimental_Approaches": [
+      "Extensive ablation studies on temporal aggregation methods",
+      "Multi-task evaluation: classification, detection, regression",
+      "Two-phase evaluation pipeline (volume and shape accuracy)",
+      "Evaluation across multiple difficulty levels (easy, medium, hard)",
+      "Stratified analysis by question duration or data scarcity",
+      "Use of both segmented and continuous video tasks"
+    ],
+    "Common_Baseline_Approaches": [
+      "Max/mean pooling",
+      "Fixed temporal pyramid",
+      "LSTM and temporal convolution",
+      "Per-frame classification",
+      "Majority vote and weighted vote",
+      "State-of-the-art models (I3D, InceptionV3, COLMAP, NeuS2)"
+    ],
+    "Common_Evaluation_Metrics": [
+      "Mean Average Precision (mAP) for classification",
+      "Root-Mean-Squared Error (RMSE) for regression",
+      "Accuracy for pitch type classification",
+      "Per-frame mAP for continuous detection",
+      "MAPE for volume accuracy",
+      "Chamfer distance for shape accuracy",
+      "F1-score and macro-average F1 for imbalanced data"
+    ],
+    "Common_Contribution_Patterns": [
+      "Introduction of a new, large-scale, publicly available dataset",
+      "Proposal of a novel methodological framework (e.g., sub-event/super-event hierarchy)",
+      "Creation of a standardized benchmark challenge",
+      "Empirical validation across multiple tasks and settings",
+      "Demonstration of the importance of learning temporal intervals or spatial calibration"
+    ],
+    "Common_Novelty_Patterns": [
+      "Novel dataset design for fine-grained recognition in broadcast video",
+      "Innovative temporal modeling using learned sub-events and super-events",
+      "Structured challenge format with tiered difficulty and unified evaluation",
+      "Integration of multiple state-of-the-art techniques in a benchmark setting",
+      "Use of physical references (checkerboard) for calibration in 3D reconstruction"
+    ],
+    "Common_Quality_Characteristics": [
+      "High-quality, densely annotated datasets",
+      "Rigorous experimental design with ablation studies",
+      "Use of state-of-the-art models and standard evaluation metrics",
+      "Clear methodology with mathematical formalization",
+      "Public release of dataset and code (implied by reproducibility)",
+      "Strong, consistent results across multiple tasks"
+    ],
+    "Average_Criterion_Scores": {
+      "Research_Problem": 5.0,
+      "Research_Gap": 5.0,
+      "Novelty": 4.5,
+      "Objectives": 5.0,
+      "Literature_Review": 4.5,
+      "Methodology_Rigor": 5.0,
+      "Dataset_Quality": 5.0,
+      "Experimental_Validation": 5.0,
+      "Baseline_Comparison": 5.0,
+      "Evaluation_Metrics": 5.0,
+      "Results_Quality": 5.0,
+      "Statistical_Validation": 3.5,
+      "Reproducibility": 5.0,
+      "Limitations": 4.0,
+      "Overall_Research_Contribution": 5.0
+    },
+    "Recurring_Strengths": [
+      "Strong technical depth in video and 3D modeling",
+      "High-quality, publicly available datasets",
+      "Rigorous experimental validation across multiple tasks",
+      "Clear articulation of objectives and contributions",
+      "Use of state-of-the-art deep learning models",
+      "Emphasis on reproducibility and public data release"
+    ],
+    "Recurring_Weaknesses": [
+      "Lack of formal statistical validation in both papers",
+      "Limited discussion of statistical significance in results"
+    ],
+    "Conference_Profile": "CVPR accepts high-quality, technically rigorous research in computer vision, particularly in video understanding and 3D reconstruction. Papers emphasize novel datasets, methodological innovation in temporal modeling, and real-world applicability. The research is deeply technical, with strong empirical validation, use of advanced deep learning models, and a clear focus on reproducibility and public data release. Contributions are often multi-faceted, combining new data, new methods, and comprehensive evaluation.",
+    "Observable_Alignment_Characteristics": [
+      "Focus on fine-grained, real-world video analysis",
+      "Introduction of new, publicly available datasets",
+      "Use of 3D CNNs and temporal modeling architectures",
+      "Rigorous experimental validation across multiple tasks",
+      "Emphasis on reproducibility and public code/data",
+      "Application to real-world domains (sports, health, nutrition)"
+    ]
+  },
+  "EMNLP": {
+    "Conference_Name": "EMNLP",
+    "Number_of_Papers": 2,
+    "Common_Research_Problems": [
+      "Semantic interpretation of noun-noun compounds",
+      "Dynamic aggregation of crowdsourced forecasts with justifications",
+      "Improving generalization in NLP models under data imbalance",
+      "Modeling human-generated justifications in forecasting",
+      "Temporal aggregation of predictions over time"
+    ],
+    "Common_Research_Gaps": [
+      "Lack of application of transfer and multi-task learning to noun-noun compound interpretation",
+      "Absence of dynamic aggregation models that incorporate written justifications over time",
+      "Limited ability of models to generalize on rare semantic relations",
+      "No prior work on temporal aggregation of forecasts with justifications across a question's full life",
+      "Insufficient use of dual-annotation data for multi-task learning"
+    ],
+    "Common_Topics_or_Research_Areas": [
+      "Semantic role labeling",
+      "Noun-noun compound interpretation",
+      "Transfer and multi-task learning in NLP",
+      "Natural language processing for forecasting",
+      "Argumentation and justification modeling",
+      "Temporal forecasting with sequential models",
+      "Computational social science"
+    ],
+    "Common_Methodologies": [
+      "Neural feed-forward classifiers with embedding, hidden, and output layers",
+      "Transfer learning (TLE, TLH, TLEH) with parameter initialization",
+      "Multi-task learning (MTLE, MTLF) with shared and task-specific layers",
+      "BERT for text encoding of questions and justifications",
+      "LSTM for sequential modeling of forecasts",
+      "Ablation studies on input components",
+      "Use of dual-annotation data from PCEDT and NomBank"
+    ],
+    "Common_Datasets": [
+      "Dual-annotated dataset from PCEDT and NomBank for noun-noun compounds",
+      "Good Judgment Open dataset with 441 binary questions, 96,664 forecasts, and written justifications",
+      "Publicly available linguistic resources with rich metadata",
+      "Large-scale, real-world datasets with human-generated text and predictions"
+    ],
+    "Common_Experimental_Approaches": [
+      "Controlled experiments with multiple TL/MTL variants",
+      "Ablation studies on input components and model architecture",
+      "Evaluation on unseen compounds and across question life stages",
+      "Stratified analysis by question difficulty and duration",
+      "Generalization analysis and error pattern identification",
+      "Use of macro-average F1 for imbalanced data"
+    ],
+    "Common_Baseline_Approaches": [
+      "Single-task learning (STL) model as baseline",
+      "Majority vote and weighted vote for forecasting aggregation",
+      "Standard neural models trained with same hyperparameters",
+      "Comparison against state-of-the-art models in the domain"
+    ],
+    "Common_Evaluation_Metrics": [
+      "Accuracy",
+      "Per-relation F1",
+      "Macro-average F1",
+      "Generalization error on unseen compounds",
+      "Accuracy across all days and quartiles of question duration",
+      "Stratified evaluation by difficulty and duration"
+    ],
+    "Common_Contribution_Patterns": [
+      "First empirical study of TL/MTL for noun-noun compound interpretation",
+      "Demonstration of improved performance on rare relations",
+      "Insight into the effectiveness of embedding-layer transfer",
+      "Analysis of lexical memorization vs. generalization",
+      "Empirical evidence that justifications improve aggregation accuracy",
+      "Novel model architecture for time-aware aggregation"
+    ],
+    "Common_Novelty_Patterns": [
+      "Application of TL/MTL to noun-noun compound interpretation",
+      "Use of dual-annotation data for multi-task learning",
+      "Neural model that incorporates justifications and questions over time",
+      "Temporal analysis of model performance across question life stages",
+      "Novel evaluation framework for dynamic forecasting aggregation"
+    ],
+    "Common_Quality_Characteristics": [
+      "Rigorous experimental design with ablation studies",
+      "Comprehensive evaluation using multiple metrics",
+      "Detailed error and generalization analysis",
+      "Clear articulation of limitations",
+      "Use of high-quality, established datasets",
+      "Reproducible setup with standard tools"
+    ],
+    "Average_Criterion_Scores": {
+      "Research_Problem": 5.0,
+      "Research_Gap": 5.0,
+      "Novelty": 4.5,
+      "Objectives": 5.0,
+      "Literature_Review": 4.5,
+      "Methodology_Rigor": 5.0,
+      "Dataset_Quality": 5.0,
+      "Experimental_Validation": 5.0,
+      "Baseline_Comparison": 5.0,
+      "Evaluation_Metrics": 5.0,
+      "Results_Quality": 5.0,
+      "Statistical_Validation": 3.0,
+      "Reproducibility": 4.0,
+      "Limitations": 5.0,
+      "Overall_Research_Contribution": 5.0
+    },
+    "Recurring_Strengths": [
+      "Strong focus on semantic understanding and generalization",
+      "Rigorous empirical evaluation with ablation studies",
+      "Use of high-quality linguistic datasets",
+      "Clear articulation of research questions and objectives",
+      "Application of modern NLP techniques (BERT, LSTM) to real-world problems",
+      "Emphasis on model interpretability and generalization"
+    ],
+    "Recurring_Weaknesses": [
+      "Lack of formal statistical validation in both papers",
+      "Limited discussion of statistical significance in results"
+    ],
+    "Conference_Profile": "EMNLP accepts papers in semantic NLP that apply neural and machine learning techniques to problems involving meaning, structure, and generalization. These papers typically feature rigorous experiments, use of linguistic resources, focus on evaluation beyond accuracy (e.g., rare classes, generalization), and contributions that advance both methodology and understanding of language representation. The research is technically deep, empirically grounded, and often bridges computational and linguistic insights.",
+    "Observable_Alignment_Characteristics": [
+      "Focus on semantic interpretation and meaning in language",
+      "Application of transfer and multi-task learning to core NLP problems",
+      "Use of linguistic resources (PCEDT, NomBank) and human-generated text",
+      "Rigorous evaluation with ablation studies and stratified analysis",
+      "Modeling of human-generated justifications and temporal dynamics",
+      "Emphasis on generalization and rare class performance"
+    ]
+  },
+  "KDD": {
+    "Conference_Name": "KDD",
+    "Number_of_Papers": 2,
+    "Common_Research_Problems": [
+      "Detecting medication-induced motor fluctuations in Parkinson’s disease using wearable sensor data",
+      "Mitigating popularity bias in collaborative filtering-based recommendation systems"
+    ],
+    "Common_Research_Gaps": [
+      "Lack of ecologically valid, unobtrusive biomarkers for PD progression",
+      "Failure of existing indoor localization methods to generalize across PD patients",
+      "Inadequate supervision for unpopular items in recommendation systems",
+      "Representation separation between popular and unpopular items in CF",
+      "Lack of effective methods to extract shared supervisory signals from popular items"
+    ],
+    "Common_Topics_or_Research_Areas": [
+      "Healthcare analytics",
+      "Wearable sensor data analysis",
+      "Multi-modal time-series modeling",
+      "Indoor localization for health monitoring",
+      "Parkinson’s disease monitoring",
+      "Real-world data and naturalistic environments",
+      "Transformer-based models for time-series",
+      "Biomarker discovery in neurodegenerative diseases",
+      "Recommendation systems",
+      "Popularity bias mitigation",
+      "Contrastive learning in recommendation",
+      "Representation learning for recommender systems",
+      "Fairness and diversity in recommender systems"
+    ],
+    "Common_Methodologies": [
+      "Transformer-based architecture with dual convolutional self-attention",
+      "Gated Residual Network (GRN) for modality fusion",
+      "Conditional Random Field (CRF) for temporal consistency",
+      "Multi-task loss combining CRF and binary cross-entropy",
+      "Popularity-aware supervised alignment module",
+      "Re-weighting contrastive learning with hyperparameters α and β",
+      "Dynamic batch-wise popularity grouping",
+      "Use of LightGCN as backbone",
+      "InfoNCE-based contrastive learning with adaptive weighting"
+    ],
+    "Common_Datasets": [
+      "24 participants (12 PD, 12 HC) in a sensor-equipped smart home for five days",
+      "Synchronized RSSI (5 Hz) and accelerometer (30 Hz) data from dual wrist-worn devices",
+      "Ground truth from wall-mounted cameras and manual annotation",
+      "Three widely recognized public datasets: Amazon-book, Yelp2018, Gowalla",
+      "Preprocessed datasets with users and items having at least 10 interactions"
+    ],
+    "Common_Experimental_Approaches": [
+      "Five cross-validation types (ALL-HC, LOO-HC, LOO-PD, 4m-HC, 4m-PD)",
+      "Ablation studies on model components and modalities",
+      "Comprehensive experiments including overall performance, debiasing ability, and hyperparameter sensitivity",
+      "Evaluation across multiple datasets and metrics",
+      "Use of real-world, free-living data from a smart home environment"
+    ],
+    "Common_Baseline_Comparison": [
+      "Random Forest",
+      "Modified transformer",
+      "State-of-the-art multimodal model (DTML)",
+      "Ablation variants of the proposed model",
+      "Re-weighting-based (IPS, α-AdjNorm)",
+      "Decorrelation-based (MACR, InvCF)",
+      "Contrastive-learning-based (Adap-τ, SimGCL) methods"
+    ],
+    "Common_Evaluation_Metrics": [
+      "Precision, weighted F1-score, AUROC",
+      "Mean transition duration (in seconds)",
+      "Recall@K, HR@K, NDCG@K",
+      "MAPE for volume accuracy",
+      "Chamfer distance for shape accuracy",
+      "Statistical significance testing (Friedman, Wilcoxon)"
+    ],
+    "Common_Contribution_Patterns": [
+      "Novel deep learning architecture for multi-modal indoor localization",
+      "Demonstration of in-home gait speed features as a biomarker for medication state",
+      "Validation of the approach in a real-world, ecologically valid setting",
+      "Introduction of a novel method (PAAC) that combines supervised alignment and re-weighted contrastive learning",
+      "Empirical validation of the method's effectiveness in reducing popularity bias"
+    ],
+    "Common_Novelty_Patterns": [
+      "Transformer-based architecture with dual convolutional self-attention and GRN",
+      "Use of conditional random fields for temporal consistency in localization",
+      "Popularity-aware supervised alignment module",
+      "Re-weighting contrastive learning with adaptive hyperparameters",
+      "Dynamic batch-wise grouping for popularity-based training"
+    ],
+    "Common_Quality_Characteristics": [
+      "High-quality, real-world dataset collected in a smart home",
+      "Rigorous experimental design with multiple cross-validation types",
+      "Comprehensive baseline comparison and ablation studies",
+      "Statistical validation using appropriate non-parametric tests",
+      "Clear articulation of limitations and future work",
+      "Well-structured methodology with mathematical formalism",
+      "Strong, consistent results across multiple metrics and settings"
+    ],
+    "Average_Criterion_Scores": {
+      "Research_Problem": 5.0,
+      "Research_Gap": 5.0,
+      "Novelty": 5.0,
+      "Objectives": 5.0,
+      "Literature_Review": 4.0,
+      "Methodology_Rigor": 5.0,
+      "Dataset_Quality": 5.0,
+      "Experimental_Validation": 5.0,
+      "Baseline_Comparison": 5.0,
+      "Evaluation_Metrics": 5.0,
+      "Results_Quality": 5.0,
+      "Statistical_Validation": 5.0,
+      "Reproducibility": 4.0,
+      "Limitations": 5.0,
+      "Overall_Research_Contribution": 5.0
+    },
+    "Recurring_Strengths": [
+      "Strong focus on real-world, naturalistic data analysis",
+      "Application of advanced deep learning (transformers, multi-modal fusion) to high-impact healthcare and recommendation problems",
+      "Rigorous evaluation with statistical validation and multiple baselines",
+      "Clear articulation of objectives and contributions",
+      "Use of high-quality, real-world datasets",
+      "Demonstration of both technical innovation and practical clinical or system-level impact"
+    ],
+    "Recurring_Weaknesses": [
+      "Limited discussion of data privacy and ethical considerations",
+      "Conditional data availability (not fully public)"
+    ],
+    "Conference_Profile": "KDD accepts applied data science research with real-world impact, particularly in healthcare and recommendation systems. Papers use multi-modal time-series data from wearables, apply advanced deep learning (transformers, contrastive learning), and evaluate models on clinically meaningful tasks. The methodology is technically deep, with rigorous validation, and the contribution is both methodological and applied, emphasizing real-world impact and reproducibility.",
+    "Observable_Alignment_Characteristics": [
+      "Focus on real-world, naturalistic data from smart homes or online platforms",
+      "Application of advanced deep learning (transformers, contrastive learning) to practical problems",
+      "Rigorous evaluation with statistical validation and multiple baselines",
+      "Use of high-quality, real-world datasets with ground truth",
+      "Demonstration of both technical innovation and practical impact",
+      "Emphasis on reproducibility and benchmarking"
+    ]
+  },
+  "NeurIPS": {
+    "Conference_Name": "NeurIPS",
+    "Number_of_Papers": 2,
+    "Common_Research_Problems": [
+      "Ensuring safety and correctness in machine learning models for safety-critical applications",
+      "Understanding generalization in shallow ReLU networks under limited training data"
+    ],
+    "Common_Research_Gaps": [
+      "Lack of methods that guarantee safety constraints during and before training",
+      "Absence of generalization theory for shallow ReLU networks in regression with unbounded risk",
+      "Inadequacy of traditional statistical learning tools (VC-dimension, Rademacher complexity) for non-convex regression",
+      "Failure of compressed sensing methods to capture stochastic risk through advanced chaining"
+    ],
+    "Common_Topics_or_Research_Areas": [
+      "Safe machine learning",
+      "Formal verification of neural networks",
+      "Input-output specification enforcement",
+      "Safety-critical AI",
+      "Neural network architectures with guarantees",
+      "Constraint-based learning",
+      "Adversarial robustness",
+      "Theoretical machine learning",
+      "Generalization theory",
+      "Neural network analysis",
+      "Non-convex optimization",
+      "Concentration of measure",
+      "Stochastic processes in learning",
+      "ReLU networks",
+      "Sample complexity"
+    ],
+    "Common_Methodologies": [
+      "Correct-by-construction neural network design",
+      "Convex combination of constrained predictors",
+      "Bit-string-based partitioning of input space",
+      "Proximity functions for constraint regions",
+      "Shared representation with task-specific heads",
+      "Formal proof of safety (Theorem 2.1)",
+      "Advanced mathematical tools from stochastic processes",
+      "Chaining theory, Sub-Gaussian metrics, covering numbers, Talagrand functionals",
+      "Neural Restricted Isometry Property (NeuRIPs)"
+    ],
+    "Common_Datasets": [
+      "Synthetic datasets (Appendix B)",
+      "Real-world dataset from VerticalCAS benchmark",
+      "Standard Gaussian input distribution (Assumption 2)",
+      "Synthetic data used for controlled validation"
+    ],
+    "Common_Experimental_Approaches": [
+      "Experiments on both synthetic and real-world datasets",
+      "Demonstration of constraint enforcement and smoothness",
+      "Comparison with unconstrained neural network baseline",
+      "Validation of zero violation rate and minimal accuracy drop",
+      "Theoretical analysis with explicit dependencies on parameters"
+    ],
+    "Common_Baseline_Approaches": [
+      "Standard unconstrained neural network",
+      "Reluplex (for verification)",
+      "Abstraction-refinement methods",
+      "Adversarial robustness baselines",
+      "Traditional statistical learning tools (VC-dimension, Rademacher complexity)"
+    ],
+    "Common_Evaluation_Metrics": [
+      "Accuracy (ACC)",
+      "Violation rate (percentage of inputs violating safeability property)",
+      "Generalization error",
+      "Expected risk",
+      "Empirical risk",
+      "Covering numbers",
+      "Talagrand functional",
+      "Concentration probabilities"
+    ],
+    "Common_Contribution_Patterns": [
+      "Novel method for safe predictor construction",
+      "Guaranteed constraint satisfaction at all training stages",
+      "Applicable to any differentiable model",
+      "Demonstrated on a real-world safety-critical system",
+      "Zero violations while maintaining high accuracy",
+      "Introduction of a new theoretical framework (NeuRIPs)",
+      "Application of advanced stochastic process tools to neural networks",
+      "Uniform generalization bounds for shallow ReLU networks"
+    ],
+    "Common_Novelty_Patterns": [
+      "Correct-by-construction method for safe predictors",
+      "Use of convex combinations of constrained predictors with region-dependent weighting",
+      "Introduction of Neural Restricted Isometry Property (NeuRIPs)",
+      "Application of chaining theory to non-convex regression problems",
+      "Formal proof of safety for any differentiable model"
+    ],
+    "Common_Quality_Characteristics": [
+      "Mathematical rigor with formal proof",
+      "Clear problem statement and gap identification",
+      "Strong empirical validation",
+      "Reproducible implementation details",
+      "Honest discussion of limitations",
+      "High relevance to safety-critical AI"
+    ],
+    "Average_Criterion_Scores": {
+      "Research_Problem": 5.0,
+      "Research_Gap": 5.0,
+      "Novelty": 5.0,
+      "Objectives": 5.0,
+      "Literature_Review": 4.0,
+      "Methodology_Rigor": 5.0,
+      "Dataset_Quality": 4.0,
+      "Experimental_Validation": 5.0,
+      "Baseline_Comparison": 5.0,
+      "Evaluation_Metrics": 5.0,
+      "Results_Quality": 5.0,
+      "Statistical_Validation": 3.0,
+      "Reproducibility": 4.0,
+      "Limitations": 4.0,
+      "Overall_Research_Contribution": 5.0
+    },
+    "Recurring_Strengths": [
+      "High mathematical rigor and formal proofs",
+      "Focus on foundational theoretical advances in machine learning",
+      "Introduction of new concepts and frameworks (NeuRIPs, correct-by-construction)",
+      "Strong theoretical guarantees and non-asymptotic bounds",
+      "Clear articulation of objectives and contributions",
+      "Application to high-stakes, safety-critical domains"
+    ],
+    "Recurring_Weaknesses": [
+      "Lack of formal statistical validation in both papers",
+      "Absence of empirical experiments in one paper",
+      "Limited discussion of statistical significance"
+    ],
+    "Conference_Profile": "NeurIPS accepts high-impact theoretical and applied research in machine learning, with a strong emphasis on mathematical rigor, formal guarantees, and foundational advances. Papers often introduce new theoretical frameworks, prove novel theorems, and provide non-asymptotic bounds. The research is highly technical, with a focus on generalization, safety, and optimization in complex models. Contributions are often conceptual and methodological, with strong theoretical underpinnings.",
+    "Observable_Alignment_Characteristics": [
+      "Focus on theoretical machine learning with formal proofs",
+      "Introduction of new theoretical concepts and frameworks",
+      "Use of advanced mathematical tools (stochastic processes, concentration inequalities)",
+      "Emphasis on formal guarantees and non-asymptotic bounds",
+      "Application to safety-critical or foundational problems",
+      "High technical depth and mathematical sophistication"
+    ]
+  },
+  "TMLR": {
+    "Conference_Name": "TMLR",
+    "Number_of_Papers": 2,
+    "Common_Research_Problems": [
+      "Convergence of denoising diffusion probabilistic models (DDPMs) with quantitative Wasserstein bounds",
+      "Convergence of optimization algorithms in nonconvex-nonconcave min-max problems under weak Minty solutions"
+    ],
+    "Common_Research_Gaps": [
+      "Lack of quantitative, non-exponential Wasserstein bounds for DDPMs without restrictive assumptions",
+      "Absence of convergence guarantees for OGDA+ under weak Minty solutions",
+      "Reliance on SDEs, discretization arguments, or restrictive assumptions in prior DDPM analysis",
+      "Inadequacy of existing assumptions (monotonicity, Minty solutions) for explaining empirical success of EG and OGDA"
+    ],
+    "Common_Topics_or_Research_Areas": [
+      "Theoretical machine learning",
+      "Generalization theory",
+      "Neural network analysis",
+      "Non-convex optimization",
+      "Concentration of measure",
+      "Stochastic processes in learning",
+      "ReLU networks",
+      "Sample complexity",
+      "Nonconvex optimization",
+      "Min-max problems",
+      "Variational inequalities",
+      "Convergence analysis",
+      "Adaptive optimization methods",
+      "Machine learning theory",
+      "Saddle point problems",
+      "Operator theory in optimization"
+    ],
+    "Common_Methodologies": [
+      "Theoretical analysis of iterative algorithms",
+      "Use of variational inequality framework",
+      "Convergence rate analysis (O(1/k))",
+      "Adaptive step size selection",
+      "Stochastic and deterministic settings",
+      "Mathematical proofs involving operator norms and Lipschitz constants",
+      "Synthetic benchmark problems",
+      "PAC-Bayesian theory",
+      "Lipschitz continuity assumptions",
+      "Reconstruction loss formulation",
+      "Coupling arguments and triangle inequality"
+    ],
+    "Common_Datasets": [
+      "Synthetic, toy problems (von Neumann’s ratio game, Forsaken, lower bound example)",
+      "Standard DDPM forward process from Ho et al. (2020)",
+      "No real-world datasets used"
+    ],
+    "Common_Experimental_Approaches": [
+      "Numerical experiments on synthetic problems",
+      "Comparison of convergence behavior and ability to escape limit cycles",
+      "Validation of theoretical claims with empirical observations",
+      "Use of challenging synthetic benchmarks known to be difficult for standard methods"
+    ],
+    "Common_Baseline_Comparison": [
+      "EG+",
+      "CurvatureEG+",
+      "Backtracking-based methods",
+      "Fixed-step EG+",
+      "Standard OGDA",
+      "Adaptive step size methods"
+    ],
+    "Common_Evaluation_Metrics": [
+      "Squared operator norm (‖F(u)‖²)",
+      "Convergence rates (O(1/k), O(ε⁻²))",
+      "Step size conditions",
+      "Empirical convergence behavior across iterations",
+      "Wasserstein distance (W₁)",
+      "PAC-Bayesian-style terms involving log(n/δ)"
+    ],
+    "Common_Contribution_Patterns": [
+      "Introduction of a new theoretical condition (weak Minty solutions)",
+      "New algorithm (OGDA+) with matching convergence rate to EG+",
+      "Adaptive step size method for EG+ without prior knowledge of Lipschitz constant",
+      "Improved step size bounds under monotonicity",
+      "Stochastic variant with complexity analysis",
+      "Quantitative upper bound on Wasserstein distance",
+      "Removal of assumptions on data distribution and score function",
+      "Avoidance of exponential dependence on dimension",
+      "Novel application of VAE-style analysis to DDPMs"
+    ],
+    "Common_Novelty_Patterns": [
+      "Introduction of weak Minty solutions as a unifying framework",
+      "New algorithm (OGDA+) with O(1/k) convergence under weak Minty solutions",
+      "Adaptive step size method for EG+ without Lipschitz knowledge",
+      "Quantitative, non-exponential Wasserstein bound for DDPMs",
+      "Novel VAE-inspired approach to DDPM analysis without SDEs"
+    ],
+    "Common_Quality_Characteristics": [
+      "High mathematical rigor",
+      "Clear problem formulation and research gap",
+      "Comprehensive literature review",
+      "Thorough theoretical proofs",
+      "Relevant synthetic experiments",
+      "Transparent discussion of limitations",
+      "Well-structured and self-contained presentation"
+    ],
+    "Average_Criterion_Scores": {
+      "Research_Problem": 5.0,
+      "Research_Gap": 5.0,
+      "Novelty": 5.0,
+      "Objectives": 5.0,
+      "Literature_Review": 5.0,
+      "Methodology_Rigor": 5.0,
+      "Dataset_Quality": 0.0,
+      "Experimental_Validation": 4.0,
+      "Baseline_Comparison": 5.0,
+      "Evaluation_Metrics": 5.0,
+      "Results_Quality": 5.0,
+      "Statistical_Validation": 0.0,
+      "Reproducibility": 4.0,
+      "Limitations": 5.0,
+      "Overall_Research_Contribution": 5.0
+    },
+    "Recurring_Strengths": [
+      "High mathematical rigor and formal proofs",
+      "Clear articulation of objectives and research gap",
+      "Comprehensive literature review",
+      "Thorough theoretical analysis",
+      "Introduction of new theoretical concepts and frameworks",
+      "Well-structured and self-contained presentation"
+    ],
+    "Recurring_Weaknesses": [
+      "No real-world datasets used",
+      "No empirical experiments or simulations",
+      "No statistical validation or multiple runs",
+      "Limited discussion of practical implications"
+    ],
+    "Conference_Profile": "TMLR accepts high-quality theoretical machine learning research with rigorous mathematical analysis. Papers focus on foundational problems (min-max, convergence, generalization) with a strong emphasis on mathematical rigor. The methodology is analytical and proof-based, relying on operator theory, convergence analysis, and advanced probability tools. Evaluation is theoretical (rates, bounds) and supported by synthetic experiments. The contribution is primarily theoretical, introducing new concepts and proving new convergence guarantees.",
+    "Observable_Alignment_Characteristics": [
+      "Focus on foundational theoretical problems in machine learning",
+      "Use of advanced mathematical tools (operator theory, stochastic processes, PAC-Bayes)",
+      "Mathematical proofs and formal theorems as primary contribution",
+      "Absence of empirical experiments or real-world datasets",
+      "High technical depth and mathematical sophistication",
+      "Emphasis on clarity, correctness, and completeness of theoretical arguments"
+    ]
+  },
+  "OVERALL_CONFERENCE_COMPARISON": [
+    {
+      "characteristic": "Research Problem",
+      "conference": "CVPR",
+      "observed_pattern": "Focus on fine-grained action recognition in video and 3D reconstruction from 2D images, with strong emphasis on real-world, ecologically valid applications.",
+      "evidence_strength": "High"
+    },
+    {
+      "characteristic": "Research Problem",
+      "conference": "EMNLP",
+      "observed_pattern": "Focus on semantic interpretation of noun-noun compounds and dynamic aggregation of crowdsourced forecasts with justifications, emphasizing generalization and rare class performance.",
+      "evidence_strength": "High"
+    },
+    {
+      "characteristic": "Research Problem",
+      "conference": "KDD",
+      "observed_pattern": "Focus on real-world, naturalistic data analysis in healthcare and recommendation systems, with applications to PD monitoring and popularity bias mitigation.",
+      "evidence_strength": "High"
+    },
+    {
+      "characteristic": "Research Problem",
+      "conference": "NeurIPS",
+      "observed_pattern": "Focus on foundational theoretical problems in machine learning, such as safety guarantees and generalization in shallow ReLU networks.",
+      "evidence_strength": "High"
+    },
+    {
+      "characteristic": "Research Problem",
+      "conference": "TMLR",
+      "observed_pattern": "Focus on theoretical convergence analysis of optimization algorithms and diffusion models, with emphasis on mathematical rigor and formal proofs.",
+      "evidence_strength": "High"
+    },
+    {
+      "characteristic": "Research Gap",
+      "conference": "CVPR",
+      "observed_pattern": "Lack of publicly available, high-quality datasets for fine-grained sports video analysis and standardized benchmarks for 3D food reconstruction.",
+      "evidence_strength": "High"
+    },
+    {
+      "characteristic": "Research Gap",
+      "conference": "EMNLP",
+      "observed_pattern": "Absence of dynamic aggregation models that incorporate written justifications over time and lack of application of TL/MTL to noun-noun compound interpretation.",
+      "evidence_strength": "High"
+    },
+    {
+      "characteristic": "Research Gap",
+      "conference": "KDD",
+      "observed_pattern": "Lack of ecologically valid, unobtrusive biomarkers for PD progression and inadequate supervision for unpopular items in recommendation systems.",
+      "evidence_strength": "High"
+    },
+    {
+      "characteristic": "Research Gap",
+      "conference": "NeurIPS",
+      "observed_pattern": "Lack of methods that guarantee safety constraints during and before training and absence of generalization theory for shallow ReLU networks in regression.",
+      "evidence_strength": "High"
+    },
+    {
+      "characteristic": "Research Gap",
+      "conference": "TMLR",
+      "observed_pattern": "Reliance on restrictive assumptions in prior DDPM analysis and lack of convergence guarantees for OGDA+ under weak Minty solutions.",
+      "evidence_strength": "High"
+    },
+    {
+      "characteristic": "Novelty",
+      "conference": "CVPR",
+      "observed_pattern": "Introduction of new datasets (MLB-YouTube, MetaFood3D) and novel temporal modeling frameworks (sub-events/super-events).",
+      "evidence_strength": "High"
+    },
+    {
+      "characteristic": "Novelty",
+      "conference": "EMNLP",
+      "observed_pattern": "Application of TL/MTL to noun-noun compound interpretation and development of a neural model for time-aware aggregation with justifications.",
+      "evidence_strength": "High"
+    },
+    {
+      "

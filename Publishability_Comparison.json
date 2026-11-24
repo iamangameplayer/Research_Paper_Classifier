@@ -1,0 +1,205 @@
+{
+  "1. Research Problem": {
+    "Publishable_Average_Score": 5,
+    "Non_Publishable_Average_Score": 1.8,
+    "Score_Difference": 3.2,
+    "Publishable_Pattern": "Clearly defined, technically complex, and grounded in real-world applications. Problems are specific, measurable, and motivated by practical challenges.",
+    "Non_Publishable_Pattern": "Vague, fantastical, or non-empirical. Often involves absurd, fictional, or impossible connections between unrelated domains. Lacks scientific grounding.",
+    "Distinguishing_Value": "Strong",
+    "Evidence_Summary": "All publishable papers have well-articulated, realistic research problems. Non-publishable papers either lack a coherent problem or present absurd, fictional ones (e.g., graphite influencing butterfly migration via jazz music)."
+  },
+  "2. Research Gap": {
+    "Publishable_Average_Score": 5,
+    "Non_Publishable_Average_Score": 1.4,
+    "Score_Difference": 3.6,
+    "Publishable_Pattern": "Clearly articulated and supported by a critical review of prior work. Gaps are specific, defensible, and directly tied to the research problem.",
+    "Non_Publishable_Pattern": "Non-existent or fabricated. Claims of gaps are based on fictional fields (e.g., 'sparklesynthesis') or lack any reference to prior literature.",
+    "Distinguishing_Value": "Strong",
+    "Evidence_Summary": "Publishable papers identify gaps through systematic literature analysis. Non-publishable papers invent gaps without citing real prior work, indicating no scholarly engagement."
+  },
+  "3. Novelty": {
+    "Publishable_Average_Score": 4.7,
+    "Non_Publishable_Average_Score": 1.0,
+    "Score_Difference": 3.7,
+    "Publishable_Pattern": "Original contributions in methods, datasets, or frameworks. Novelty is grounded in technical innovation or data creation, not whimsy.",
+    "Non_Publishable_Pattern": "Invented, fictional, or nonsensical. Claims of novelty are based on made-up concepts (e.g., 'quantum flamenco', 'Kabloinkle’s Cipher') with no basis in science.",
+    "Distinguishing_Value": "Strong",
+    "Evidence_Summary": "Publishable papers introduce real innovations (e.g., MLB-YouTube dataset, PAAC method). Non-publishable papers claim novelty through fantasy, not real advancement."
+  },
+  "4. Objectives": {
+    "Publishable_Average_Score": 5,
+    "Non_Publishable_Average_Score": 1.8,
+    "Score_Difference": 3.2,
+    "Publishable_Pattern": "Specific, measurable, and directly aligned with the research problem. Objectives are clearly stated and systematically addressed.",
+    "Non_Publishable_Pattern": "Vague, poetic, or untestable. Often expressed in abstract, philosophical language (e.g., 'deciphering the enigmatic properties of metals').",
+    "Distinguishing_Value": "Strong",
+    "Evidence_Summary": "Publishable papers have actionable, research-driven objectives. Non-publishable papers use aspirational or metaphysical language that cannot guide empirical work."
+  },
+  "5. Literature Review": {
+    "Publishable_Average_Score": 4.4,
+    "Non_Publishable_Average_Score": 1.8,
+    "Score_Difference": 2.6,
+    "Publishable_Pattern": "Comprehensive, critical, and well-structured. Engages with relevant prior work and positions the current work within the field.",
+    "Non_Publishable_Pattern": "Fabricated or non-existent. Cites fictional studies, nonexistent researchers, or unrelated cultural references (e.g., 'professional snail racing').",
+    "Distinguishing_Value": "Moderate",
+    "Evidence_Summary": "Publishable papers cite real, peer-reviewed work. Non-publishable papers invent sources, indicating a lack of scholarly rigor."
+  },
+  "6. Methodology Rigor": {
+    "Publishable_Average_Score": 5,
+    "Non_Publishable_Average_Score": 1.4,
+    "Score_Difference": 3.6,
+    "Publishable_Pattern": "Mathematically formalized, systematic, and reproducible. Includes ablation studies, consistent implementation, and clear design choices.",
+    "Non_Publishable_Pattern": "Nonsensical or impossible. Describes methods involving trained seals, Ouija boards, or typewriters to simulate black holes.",
+    "Distinguishing_Value": "Strong",
+    "Evidence_Summary": "Publishable papers use valid, repeatable procedures. Non-publishable papers describe physically implausible or arbitrary methods, undermining credibility."
+  },
+  "7. Dataset Quality": {
+    "Publishable_Average_Score": 5,
+    "Non_Publishable_Average_Score": 0.6,
+    "Score_Difference": 4.4,
+    "Publishable_Pattern": "Large, diverse, well-annotated, and publicly available. Includes real-world data with clear collection and preprocessing details.",
+    "Non_Publishable_Pattern": "Non-existent or trivial. Describes data from 'psychic hamsters' or 'dream transcriptions on copper sheets' with no real foundation.",
+    "Distinguishing_Value": "Strong",
+    "Evidence_Summary": "Publishable papers introduce or use real, high-quality datasets. Non-publishable papers fabricate data sources, making dataset quality entirely absent."
+  },
+  "8. Experimental Validation": {
+    "Publishable_Average_Score": 5,
+    "Non_Publishable_Average_Score": 1.4,
+    "Score_Difference": 3.6,
+    "Publishable_Pattern": "Thorough, multi-faceted, and systematic. Includes ablation studies, multiple tasks, and real-world validation.",
+    "Non_Publishable_Pattern": "Non-existent or surreal. Experiments involve plants dancing, Rube Goldberg machines, or data analyzed with tarot cards.",
+    "Distinguishing_Value": "Strong",
+    "Evidence_Summary": "Publishable papers conduct valid, repeatable experiments. Non-publishable papers describe impossible or fictional experiments with no scientific basis."
+  },
+  "9. Baseline Comparison": {
+    "Publishable_Average_Score": 5,
+    "Non_Publishable_Average_Score": 0.4,
+    "Score_Difference": 4.6,
+    "Publishable_Pattern": "Comprehensive and fair. Uses strong baselines (e.g., I3D, LightGCN) and includes ablation studies.",
+    "Non_Publishable_Pattern": "Absent or fictional. Compares results to 'trained psychic chickens' or 'psychic rabbits' with no real benchmarks.",
+    "Distinguishing_Value": "Strong",
+    "Evidence_Summary": "Publishable papers compare against relevant, state-of-the-art methods. Non-publishable papers use non-scientific baselines, invalidating any comparison."
+  },
+  "10. Evaluation Metrics": {
+    "Publishable_Average_Score": 5,
+    "Non_Publishable_Average_Score": 0.6,
+    "Score_Difference": 4.4,
+    "Publishable_Pattern": "Appropriate, standard, and well-justified. Metrics are directly tied to the task (e.g., mAP, RMSE, AUROC).",
+    "Non_Publishable_Pattern": "Non-existent or meaningless. Claims of 'remarkable accuracy' without quantifiable measures or statistical support.",
+    "Distinguishing_Value": "Strong",
+    "Evidence_Summary": "Publishable papers use valid, widely accepted metrics. Non-publishable papers lack any measurable criteria, making evaluation impossible."
+  },
+  "11. Results Quality": {
+    "Publishable_Average_Score": 5,
+    "Non_Publishable_Average_Score": 1.0,
+    "Score_Difference": 4.0,
+    "Publishable_Pattern": "Strong, consistent, and meaningful. Results show clear improvements over baselines with real-world implications.",
+    "Non_Publishable_Pattern": "Fantastical or impossible. Claims include metals exhibiting sentience or materials resisting gravity in honey.",
+    "Distinguishing_Value": "Strong",
+    "Evidence_Summary": "Publishable papers report credible, interpretable results. Non-publishable papers present results that contradict known physical laws."
+  },
+  "12. Statistical Validation": {
+    "Publishable_Average_Score": 3.8,
+    "Non_Publishable_Average_Score": 0.2,
+    "Score_Difference": 3.6,
+    "Publishable_Pattern": "Present in most papers. Includes t-tests, confidence intervals, or significance testing where appropriate.",
+    "Non_Publishable_Pattern": "Absent. No statistical tests, p-values, or error analysis are reported.",
+    "Distinguishing_Value": "Strong",
+    "Evidence_Summary": "Publishable papers use statistical validation to support claims. Non-publishable papers make claims without any inferential analysis."
+  },
+  "13. Reproducibility": {
+    "Publishable_Average_Score": 4.6,
+    "Non_Publishable_Average_Score": 0.8,
+    "Score_Difference": 3.8,
+    "Publishable_Pattern": "Highly reproducible. Includes detailed implementation, hyperparameters, and public data/code.",
+    "Non_Publishable_Pattern": "Impossible. Describes 'bespoke apparatus' with undefined components and no code or data.",
+    "Distinguishing_Value": "Strong",
+    "Evidence_Summary": "Publishable papers provide sufficient detail for replication. Non-publishable papers describe unreplicable, fictional systems."
+  },
+  "14. Limitations": {
+    "Publishable_Average_Score": 4.4,
+    "Non_Publishable_Average_Score": 1.4,
+    "Score_Difference": 3.0,
+    "Publishable_Pattern": "Clearly stated, relevant, and specific. Acknowledges technical, data, and generalization constraints.",
+    "Non_Publishable_Pattern": "Weak or absent. Claims are presented as definitive without any caveats or self-critique.",
+    "Distinguishing_Value": "Moderate",
+    "Evidence_Summary": "Publishable papers discuss limitations honestly. Non-publishable papers ignore constraints, showing no scholarly maturity."
+  },
+  "15. Overall Research Contribution": {
+    "Publishable_Average_Score": 5,
+    "Non_Publishable_Average_Score": 1.0,
+    "Score_Difference": 4.0,
+    "Publishable_Pattern": "Substantial, multi-faceted, and impactful. Includes new datasets, methods, or frameworks with real-world applications.",
+    "Non_Publishable_Pattern": "Non-existent or fictional. Claims to 'revolutionize' fields without any factual or scientific basis.",
+    "Distinguishing_Value": "Strong",
+    "Evidence_Summary": "Publishable papers make real, measurable contributions. Non-publishable papers make grandiose claims with no empirical or theoretical foundation."
+  },
+  "Overall_Analysis": {
+    "1. Strong_Publishability_Indicators": [
+      "Clear, well-defined research problems grounded in real-world challenges.",
+      "Valid, well-articulated research gaps supported by critical literature review.",
+      "Genuine novelty in methods, datasets, or frameworks, not fantasy.",
+      "Specific, measurable objectives that are systematically addressed.",
+      "High-quality, real-world datasets with public availability.",
+      "Rigorous, reproducible methodologies with ablation studies.",
+      "Comprehensive baseline comparisons using strong, relevant baselines.",
+      "Appropriate, standard evaluation metrics tied to the task.",
+      "Strong, consistent results with meaningful improvements over baselines.",
+      "Statistical validation where applicable, including significance testing.",
+      "High reproducibility through detailed implementation and public data/code.",
+      "Honest discussion of limitations and constraints."
+    ],
+    "2. Moderate_Publishability_Indicators": [
+      "Use of formal mathematical proofs in theoretical papers (e.g., R013, R014, R015).",
+      "Inclusion of synthetic or toy datasets in theoretical work (e.g., R014, R015).",
+      "Use of non-standard metrics in niche domains (e.g., per-frame mAP in continuous detection).",
+      "Limited statistical validation in theoretical papers (e.g., R013, R014) is acceptable given the nature of the work."
+    ],
+    "3. Weak_or_Non_Distinguishing_Factors": [
+      "The presence of statistical validation is not universal in publishable papers (e.g., R013, R014, R015 lack it), but this is context-dependent.",
+      "Some publishable papers have minor reproducibility issues (e.g., R011, R012) due to missing code, but this does not prevent publication.",
+      "The literature review score varies slightly, but even moderate scores are acceptable if the gap is well-justified."
+    ],
+    "4. Non_Publishable_Patterns": [
+      "Complete absence of a coherent research problem.",
+      "Fabrication of literature, researchers, and studies.",
+      "Invention of fictional methods, datasets, and experiments.",
+      "Use of non-scientific tools (e.g., Ouija boards, tarot cards) for data analysis.",
+      "Presentation of results that contradict known physical laws.",
+      "No statistical validation or reproducibility details.",
+      "No acknowledgment of limitations or constraints.",
+      "Grandiose claims without any empirical or theoretical foundation."
+    ],
+    "5. Most_Important_Observed_Differences": [
+      "Publishable papers are grounded in reality, while non-publishable papers are entirely fictional.",
+      "Publishable papers have real datasets, methods, and results; non-publishable papers do not.",
+      "Publishable papers engage with real literature; non-publishable papers invent it.",
+      "Publishable papers use valid metrics and statistical validation; non-publishable papers lack both.",
+      "Publishable papers are reproducible; non-publishable papers are not."
+    ],
+    "6. Potential_Publishability_Rubric": [
+      "Research Problem: Must be clearly defined, realistic, and relevant to a real-world challenge.",
+      "Research Gap: Must be supported by a critical review of prior work and be specific and defensible.",
+      "Novelty: Must be grounded in technical or data innovation, not fantasy or whimsy.",
+      "Objectives: Must be specific, measurable, and directly aligned with the problem and gap.",
+      "Literature Review: Must cite real, peer-reviewed work and synthesize it critically.",
+      "Methodology Rigor: Must be systematic, reproducible, and include ablation studies.",
+      "Dataset Quality: Must be real, well-annotated, and publicly available.",
+      "Experimental Validation: Must be thorough, multi-faceted, and conducted on real data.",
+      "Baseline Comparison: Must use strong, relevant baselines and include ablation studies.",
+      "Evaluation Metrics: Must be appropriate, standard, and well-justified.",
+      "Results Quality: Must be strong, consistent, and meaningful with real-world implications.",
+      "Statistical Validation: Must be present where applicable, including significance testing.",
+      "Reproducibility: Must include sufficient detail for replication, including code and data.",
+      "Limitations: Must be clearly stated and relevant to the work.",
+      "Overall Contribution: Must be substantial, multi-faceted, and impactful."
+    ],
+    "7. Dataset_Limitations": [
+      "The dataset is extremely small (10 publishable, 5 non-publishable), limiting statistical power and generalizability.",
+      "Findings may be biased toward the specific domains and conferences represented (e.g., CVPR, NeurIPS, TMLR).",
+      "No information is provided about the diversity of topics, methodologies, or research communities.",
+      "The results are descriptive and associative, not causal or predictive.",
+      "Overgeneralization to all research papers is not justified; this is a small, specific sample."
+    ]
+  }
+}

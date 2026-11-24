@@ -1,0 +1,29 @@
+.env
+
+# Virtual Environments
+myvirenv/
+venv/
+.venv/
+.env/
+
+# Papers
+Papers/
+Publishable_Papers_Parsed/
+Non-Publishable_Papers_Parsed/
+Non_Publishable_Results_JSON/
+Publishable_Results_JSON/
+Publishable_Results_JSON_Without_Conferences/
+Test_Parsed_Papers/
+
+#Python
+__pycache__/
+*.py[cod]
+
+#IDE
+.idea/
+.vscode/
+
+*.log
+
+data/
+papers/
