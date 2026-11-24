@@ -14,7 +14,7 @@ Non_Publishable_Results_JSON/
 Publishable_Results_JSON/
 Publishable_Results_JSON_Without_Conferences/
 Test_Parsed_Papers/
-
+Non-Publishable_Parsed_Papers/
 #Python
 __pycache__/
 *.py[cod]
