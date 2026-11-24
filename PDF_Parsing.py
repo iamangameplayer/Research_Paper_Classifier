@@ -9,8 +9,8 @@ parser = LlamaCloud(
     api_key= os.getenv("LLAMA_PARSER_API_KEY")
 )
 
-input_papers = Path(r"C:\Users\nagas\Desktop\IIT\Papers")
-output_papers = Path(r"C:\Users\nagas\Desktop\IIT\Test_Parsed_Papers")
+input_papers = Path(#path to the folder containing the papers which are needed to be parsed)
+output_papers = Path(#path to where you want to store them)
 
 
 output_papers.mkdir(exist_ok=True)
